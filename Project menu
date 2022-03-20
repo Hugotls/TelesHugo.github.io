@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Projet HTML Menu</title>
+    <style>body{
+        background-color: rgb(255, 255, 255);
+    }
+    h1{
+        color: rgb(0, 0, 0);
+        border-bottom: 1px solid;
+    }
+    ul {
+        list-style-type: none;
+        border-right: 2px solid;
+        width: 110px;
+    }
+    ul ul {
+        display: none;
+        position: absolute;
+    }
+    li:hover > ul {
+        display: block;
+        position: relative;
+        margin-left : 80px;
+        border-right: none;
+    }
+    </style>
+</head>
+
+<body>
+    
+    <h1>Formule 1</h1>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Ecuries</a>
+            <ul>
+                <li><a href="#">Ferrari</a></li>
+                <li><a href="#">Mercedes</a></li>
+                <li><a href="#">Red Bull</a></li>
+                <li><a href="#">Mclaren</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Resultats</a>
+            <ul>
+                <li><a href="#">GP Bahrein</a></li>
+                <li><a href="#">A venir</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Tickets</a>
+            <ul>
+                <li><a href="#">GP Arabie Saoudite</a></li>
+                <li><a href="#">GP Australie</a></li>
+                <li><a href="#">A venir</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Support</a></li>
+    </ul>
+
+
+</html>
